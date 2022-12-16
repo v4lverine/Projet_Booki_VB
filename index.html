@@ -5,9 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/6f341da3c0.js" crossorigin="anonymous"></script> <!-- Ajout des logos depuis Font Awesome -->
-	<title></title>
+	<title>Booki</title>
 </head>
 <body>
-   
+	<header> <!-- header avec le logo et les onglets de navigation / étape 3 -->
+		<img src="assets/images_booki/logo/Booki.png" id="logo" alt="Logo du site Booki" />
+		<div class="nav_header">
+			<a class="onglets" href="#">Hébergements</a>
+			<a class="onglets" href="#"> Activités</a>
+		</div>
+	</header>
+	<section> <!-- Début du menu recherche et filtres / étape 4 -->
+		<h1 class="menu_filtres">Trouvez votre hébergement pour des vacances de rêve</h1>
+		<p class="endroit">En plein centre-ville ou en pleine nature</p>
+
+		<form method="post" action="traitement.php"> <!-- début du formulaire de recherche et php document fictif -->
+				<label class="location" for="lieu" id="localisation">
+					<i class="fa-solid fa-location-dot"></i>
+				</label>
+					<input class="location" type="search" name="lieu" id="vacances" placeholder="Marseille, France"/><input class="location" type="submit" value="Rechercher" id="bouton"/><!-- ne pas faire d'espace entre deux inputs liés --><button class="location" type="submit" id="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
+		</form> <!-- fin du formulaire -->
+	</section>
+
 </body>
 </html>

@@ -1,3 +1,82 @@
-i {
-    color :#7B61FF;
+@font-face 
+{
+	font-family: "Raleway";
+	src: url(Raleway-VariableFont_wght.ttf) format("truetype"),
+	url(Raleway-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+body 
+{
+	font-family: "Raleway", sans-serif;
+	margin-left: 55px;
+	margin-right: 77px;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 44px;
+	margin-bottom: 63px;
+}
+
+.onglets
+{
+	margin-left: 70px;
+	text-decoration: none;
+	color: black;
+}
+
+.onglets:hover
+{
+	color: #0065FC;
+	border-top: 3px solid #0065FC;
+}
+
+#logo
+{
+	width: 61px;
+
+}
+.menu_filtres
+{
+	font-weight: 700; /*obligatoire de mettre le font weight pour un h1 ?*/
+}
+
+.location /*class du form*/
+{
+	font-family: "Raleway";
+	font-weight: 700; 
+	padding: 12px;
+	font-size: 16px;
+}
+
+#localisation /*logo ping*/
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+	background-color: #F2F2F2;
+}
+
+#vacances /*barre de recherches*/
+{
+	border: 1px solid #F2F2F2;
+}
+
+#bouton /*bouton rechercher*/
+{
+	color:white;
+	background: #0065FC;
+	border-radius: 0px 15px 15px 0px;
+	border: 1px solid #0065FC;
+}
+
+#loupe /* qui apparaîtra avec du responsive à la place du Rechercher*/
+{
+	display: none;
+	color:white;
+	background: #0065FC;
+	border-radius: 0px 15px 15px 0px;
+	border: 1px solid #0065FC;	
 }
