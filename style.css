@@ -83,7 +83,7 @@ header
 	border: 1px solid #0065FC;	
 }
 
-.tags
+.tags /*l'ensemble de l'étape 5*/
 {
 	display: flex;
 	margin-top: 20px;
