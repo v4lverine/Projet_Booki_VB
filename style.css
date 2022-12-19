@@ -16,19 +16,21 @@ header
 {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
 	align-items: flex-end;
 	margin-top: 44px;
 	margin-bottom: 63px;
 }
 
-.onglets
+
+.liens 
 {
 	margin-left: 70px;
 	text-decoration: none;
 	color: black;
 }
 
-.onglets:hover
+.liens:hover
 {
 	color: #0065FC;
 	border-top: 3px solid #0065FC;
