@@ -82,3 +82,53 @@ header
 	border-radius: 0px 15px 15px 0px;
 	border: 1px solid #0065FC;	
 }
+
+.tags
+{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+.choices
+{
+	border: #D9D9D9 solid 2px;
+	padding: 10px;
+	margin-inline: 15px;
+	border-radius: 25px 25px 25px 25px;
+	color: black;
+	text-decoration: none;
+}
+
+.choices i
+{
+	color: #0065FC;
+	padding-right: 10px;
+}
+
+.choices:hover
+{
+	background-color: #DEEBFF;
+}
+
+.logements
+{
+	display: flex;
+	align-items: center;
+}
+
+.logements i
+{
+	color: #0065FC;
+	border: #D9D9D9 solid 0.5px; 
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10px;
+	width: 10px;
+	padding: 6px;
+	margin-right: 6px;
+	font-size: 10px;
+}
