@@ -43,7 +43,7 @@ header
 }
 .menu_filtres
 {
-	font-weight: 700; /*obligatoire de mettre le font weight pour un h1 ?*/
+	font-weight: bolder  ;/*obligatoire de mettre le font weight pour un h1 ?*/
 }
 
 .location /*class du form*/
