@@ -14,8 +14,8 @@
 body 
 {
 	font-family: "Raleway", sans-serif;
-	margin-left: 55px;
-	margin-right: 77px;
+	margin-left: 50px;
+	margin-right: 60px;
 }
 
 header
@@ -28,6 +28,10 @@ header
 	margin-bottom: 63px;
 }
 
+.filtres /*la partie recherche et tags*/
+{
+	margin-bottom: 15px;
+}
 
 .liens 
 {
@@ -109,6 +113,7 @@ header
 	padding-right: 10px;
 }
 
+
 .choices:hover
 {
 	background-color: #DEEBFF;
@@ -135,14 +140,24 @@ header
 	font-size: 10px;
 }
 
-.card_canebière {
+#article_aside /*tout le bloc avec article et aside*/
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_canebière { /*le bloc entier de la card*/
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 20px; /* 5px rounded corners */
 	width: 250px;
+	height: 199px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: white;
+	text-decoration: none;
+	color: black;
 }
 
 .card_canebière:hover 
@@ -150,7 +165,7 @@ header
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.auberge_canebière /*image*/
+.auberge_canebière /*image card Hébergements*/
 {
 	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
@@ -159,29 +174,105 @@ header
 	padding-top: 3px;
 }
 
-.container h4
+.container_hébergements /*texte entier sous l'image de la card*/
+{
+	margin-left: -30px;
+}
+
+.container_hébergements h4
 {
 	margin-block: 5px 5px;
 }
 
-.container p
+.container_hébergements p
 {
 	margin-block: 5px 5px;
 }
 
-.container i
+#elem1, #elem2, #elem3, #elem4 /*tous les icons étoiles de la page web*/
 {
 	font-size: 0.8em;
 	color: #0065FC;
 	margin-bottom: 5px;
 }
 
-.container /*texte sous l'image de la card*/
+#elem5 /*l'étoile grisée*/
 {
-	margin-left: -30px;
+	font-size: 0.8em;
+	color: #D9D9D9;
+	margin-bottom: 5px;
 }
 
-#elem5
+
+.all_cards /*le bloc article avec toutes les cards Hébergements*/
 {
-	color: #D9D9D9;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(210, 210, 210, 0.2);
+	border-radius: 20px;
+	width: 100%;
+	height: 1000px;
+	padding-inline: 30px;
+}
+
+
+.all_cards_2 /*le bloc aside afin de mieux le manipuler en particulier : le texte, les cards, etc.*/
+{
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(210, 210, 210, 0.2);
+	border-radius: 20px;
+	width: 25%;
+	padding-inline: 30px;
+}
+
+.card_soleilmatin /*tout le bloc card de l'hôtel soleil matin*/
+{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 20px; /* 5px rounded corners */
+	width: 343px;
+	height: 144px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+}
+
+.card_soleilmatin:hover 
+{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.hotel_soleil_matin /*image card de l'hôtel soleil matin*/
+{
+	border-radius: 20px 0px 0px 20px;
+	object-fit: cover;
+	width: 35%;
+	height: 135px;
+	padding: 5px;
+}
+
+.container_populaires /*le bloc du texte de la card*/
+{
+	margin-top: -10px;
+	margin-left: 20px;
+}
+
+.container_populaires h4
+{
+	width: 150px;
+}
+
+.container_populaires p
+{
+	margin-top: -15px;
+}
+
+.container_populaires i
+{
+	margin-top: 25px; /*par rapport au bloc précédent*/
 }
