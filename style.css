@@ -41,10 +41,6 @@ header
 	width: 61px;
 
 }
-.menu_filtres
-{
-	font-weight: bolder  ;/*obligatoire de mettre le font weight pour un h1 ?*/
-}
 
 .location /*class du form*/
 {
