@@ -1,9 +1,14 @@
 @font-face 
 {
 	font-family: "Raleway";
-	src: url(police/Raleway-VariableFont_wght.ttf) format("truetype"),
-	url(police/Raleway-Italic-VariableFont_wght.ttf) format("truetype"),
-	url(police/Raleway-Bold.ttf) format("truetype");
+	src: url(police/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face
+{
+	font-family: "Raleway";
+	src: url(police/Raleway-VariableFont_wght.ttf);
+	font-weight: bold;
 }
 
 body 
@@ -148,6 +153,7 @@ header
 .auberge_canebière /*image*/
 {
 	border-radius: 20px 20px 0px 0px;
+	object-fit: cover;
 	width: 97%;
 	height: 120px;
 	padding-top: 3px;
@@ -163,7 +169,19 @@ header
 	margin-block: 5px 5px;
 }
 
-.container
+.container i
+{
+	font-size: 0.8em;
+	color: #0065FC;
+	margin-bottom: 5px;
+}
+
+.container /*texte sous l'image de la card*/
 {
 	margin-left: -30px;
+}
+
+#elem5
+{
+	color: #D9D9D9;
 }
