@@ -14,8 +14,10 @@
 body 
 {
 	font-family: "Raleway", sans-serif;
-	margin-left: 40px;
+	margin-left: 40px; /*les margin de la page web entière*/
+	margin-top: 40px;
 	margin-right: 40px;
+	/*max-width: 1400px; la taille que devra avoir la page pour le responsive*/
 }
 
 header
@@ -23,19 +25,22 @@ header
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
-	align-items: flex-end;
-	margin-top: 44px;
-	margin-bottom: 63px;
+	margin-bottom: 60px;
 }
 
-.filtres /*la partie recherche et tags*/
+i /*met tous les icons de la page en bleu*/
 {
-	margin-bottom: 15px;
+	color: #0065FC;
+}
+
+h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
+{
+	font-size: 1.3em;
 }
 
 .liens 
 {
-	margin-left: 70px;
+	margin-left: 70px; /*espace entre les onglets de navigation*/
 	text-decoration: none;
 	color: black;
 }
@@ -49,30 +54,39 @@ header
 #logo
 {
 	width: 61px;
-
 }
 
-.location /*class du form*/
+.filtres /*la partie recherche et tags avec l'info*/
+{
+	margin-bottom: 20px; 
+}
+
+
+.location /*class de l'intérieur du formulaire*/
 {
 	font-family: "Raleway";
-	font-weight: 700; 
+	font-weight: bold; 
 	padding: 12px;
-	font-size: 16px;
+	font-size: 1.1em;
 }
 
-#localisation /*logo ping*/
+#localisation /*bordure logo ping*/
 {
-	border: 1px solid #F2F2F2;
 	border-radius: 15px 0px 0px 15px;
 	background-color: #F2F2F2;
 }
 
-#vacances /*barre de recherches*/
+#vacances, #localisation /*bordures de barre de recherches et logo ping*/
 {
 	border: 1px solid #F2F2F2;
 }
 
-#bouton /*bouton rechercher*/
+#logo_ping
+{
+	color: black;
+}
+
+#bouton, #loupe /*bouton rechercher et bouton loupe*/
 {
 	color:white;
 	background: #0065FC;
@@ -80,21 +94,17 @@ header
 	border: 1px solid #0065FC;
 }
 
-#loupe /* qui apparaîtra avec du responsive à la place du Rechercher*/
+#loupe /*qui apparaîtra avec du responsive à la place du Rechercher*/
 {
-	display: none;
-	color:white;
-	background: #0065FC;
-	border-radius: 0px 15px 15px 0px;
-	border: 1px solid #0065FC;	
+	display: none;	
 }
 
-.tags /*l'ensemble de l'étape 5*/
+.tags /*l'ensemble de l'étape 5 avec filtres et tags*/
 {
 	display: flex;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .choices
@@ -109,7 +119,6 @@ header
 
 .choices i
 {
-	color: #0065FC;
 	padding-right: 10px;
 }
 
@@ -127,13 +136,10 @@ header
 
 .logements i
 {
-	color: #0065FC;
 	border: #D9D9D9 solid 0.5px; 
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 10px;
 	width: 10px;
 	padding: 6px;
 	margin-right: 6px;
@@ -144,7 +150,6 @@ header
 {
 	display: flex;
 	justify-content: space-between;
-	height: auto;
 }
 
 .all_cards_article /*le bloc article avec toutes les cards Hébergements*/
@@ -164,7 +169,8 @@ header
 	width: 100%;
 }
 
-.cards_hebergements { /*le bloc entier de la card*/
+.cards_hebergements  /*le bloc entier de la card*/ 
+{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 20px; /* 5px rounded corners */
@@ -200,12 +206,7 @@ header
 	margin-top: 5px;
 }
 
-.container_hébergements h4
-{
-	margin-block: 5px 5px;
-}
-
-.container_hébergements p
+.container_hébergements h4, p
 {
 	margin-block: 5px 5px;
 }
@@ -218,15 +219,13 @@ header
 	font-weight: bold;
 } 
 
-#elem1, #elem2, #elem3, #elem4 /*tous les icons étoiles de la page web*/
+#elem1, #elem2, #elem3, #elem4, #elem5 /*tous les icons étoiles de la page web*/
 {
 	font-size: 0.8em;
-	color: #0065FC;
 }
 
 #elem5 /*l'étoile grisée*/
 {
-	font-size: 0.8em;
 	color: #D9D9D9;
 }
 
@@ -248,24 +247,18 @@ header
 	justify-content: space-between;
 }
 
-.titre_populaires i 
-{
-	color: #0065FC;
-}
-
-.cards_populaires /*tout le bloc card de l'hôtel soleil matin*/
+.cards_populaires /*tout le bloc card de populaires*/
 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 20px; /* 5px rounded corners */
-	width: 100%;
-	height: 144px;
 	display: flex;
 	flex-direction: row;
 	background-color: white;
 	text-decoration: none;
 	color: black;
 	margin-bottom: 30px;
+	justify-content: space-between; /*espace entre images et conteneur texte*/
 }
 
 .cards_populaires:hover 
@@ -273,7 +266,7 @@ header
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.image_populaires /*image card de l'hôtel soleil matin*/
+.image_populaires /*image card populaires*/
 {
 	border-radius: 20px 0px 0px 20px;
 	object-fit: cover;
@@ -284,13 +277,12 @@ header
 
 .container_populaires /*le bloc du texte de la card*/
 {
-	margin-top: -10px;
-	margin-left: 20px;
+	width: 60%;
 }
 
 .container_populaires h4
 {
-	width: 160px; /*largeur du titre du conteneur h4 de Populaires*/
+	width: 80%; /*largeur du titre du conteneur h4 de Populaires*/
 }
 
 .container_populaires p
@@ -298,7 +290,12 @@ header
 	margin-top: -15px;
 }
 
-.container_populaires i
+.rows_stars /*les deux prochaines propriétés sont à revoir, s'ils n'existent pas une alternative plus simple afin de coller le tout par rapport au bloc*/
 {
-	margin-top: 25px; /*espacement par rapport au bloc précédent*/
+	padding-top: 15px; 
+}
+
+.last_row_stars
+{
+	padding-top: 35px;
 }
