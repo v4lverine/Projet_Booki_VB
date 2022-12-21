@@ -38,7 +38,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	font-size: 1.3em;
 }
 
-.liens 
+.liens /*liens de navigation du site*/
 {
 	margin-left: 70px; /*espace entre les onglets de navigation*/
 	text-decoration: none;
@@ -51,7 +51,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	border-top: 3px solid #0065FC;
 }
 
-#logo
+#logo /*logo du site*/
 {
 	width: 61px;
 }
