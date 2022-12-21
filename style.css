@@ -14,8 +14,8 @@
 body 
 {
 	font-family: "Raleway", sans-serif;
-	margin-left: 50px;
-	margin-right: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 header
@@ -144,9 +144,27 @@ header
 {
 	display: flex;
 	justify-content: space-between;
+	height: auto;
 }
 
-.card_canebière { /*le bloc entier de la card*/
+.all_cards_article /*le bloc article avec toutes les cards Hébergements*/
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: flex-start; /*pour que les éléments de la page soient alignés au début du bloc et non sur toute la hauteur*/
+	background-color: rgba(210, 210, 210, 0.2);
+	border-radius: 20px;
+	padding-inline: 50px; /*margin entre le bloc entier et les blocs internes*/
+	max-width: 60%; /*max-width du bloc entier*/
+}
+
+.all_cards_article h1 /* pour que le titre de l'article tienne sur une ligne, il prend tout la largeur du bloc*/
+{
+	width: 100%;
+}
+
+.cards_hebergements { /*le bloc entier de la card*/
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 20px; /* 5px rounded corners */
@@ -154,29 +172,32 @@ header
 	height: 199px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	background-color: white;
 	text-decoration: none;
 	color: black;
+	margin-bottom: 30px; /*espacement de la ligne horizontale entre les cards*/
+	padding-bottom: 10px; /*espacement intérieur du bloc*/
 }
 
-.card_canebière:hover 
+.cards_hebergements:hover 
 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.auberge_canebière /*image card Hébergements*/
+.image_hebergements /*image card Hébergements*/
 {
 	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
 	width: 97%;
 	height: 120px;
 	padding-top: 3px;
+	align-self: center;
 }
 
 .container_hébergements /*texte entier sous l'image de la card*/
 {
-	margin-left: -30px;
+	margin-left: 20px; /*marge enter le texte et le bord du bloc*/
+	margin-top: 5px;
 }
 
 .container_hébergements h4
@@ -189,36 +210,28 @@ header
 	margin-block: 5px 5px;
 }
 
+.lien_afficherplus
+{
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	font-weight: bold;
+} 
+
 #elem1, #elem2, #elem3, #elem4 /*tous les icons étoiles de la page web*/
 {
 	font-size: 0.8em;
 	color: #0065FC;
-	margin-bottom: 5px;
 }
 
 #elem5 /*l'étoile grisée*/
 {
 	font-size: 0.8em;
 	color: #D9D9D9;
-	margin-bottom: 5px;
 }
 
-
-.all_cards /*le bloc article avec toutes les cards Hébergements*/
+.all_cards_aside /*le bloc aside avec les cards verticales*/
 {
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(210, 210, 210, 0.2);
-	border-radius: 20px;
-	width: 100%;
-	height: 1000px;
-	padding-inline: 30px;
-}
-
-
-.all_cards_2 /*le bloc aside afin de mieux le manipuler en particulier : le texte, les cards, etc.*/
-{
-	margin-left: 50px;
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(210, 210, 210, 0.2);
@@ -227,27 +240,40 @@ header
 	padding-inline: 30px;
 }
 
-.card_soleilmatin /*tout le bloc card de l'hôtel soleil matin*/
+.titre_populaires
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.titre_populaires i 
+{
+	color: #0065FC;
+}
+
+.cards_populaires /*tout le bloc card de l'hôtel soleil matin*/
 {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	border-radius: 20px; /* 5px rounded corners */
-	width: 343px;
+	width: 100%;
 	height: 144px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	background-color: white;
 	text-decoration: none;
 	color: black;
+	margin-bottom: 30px;
 }
 
-.card_soleilmatin:hover 
+.cards_populaires:hover 
 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.hotel_soleil_matin /*image card de l'hôtel soleil matin*/
+.image_populaires /*image card de l'hôtel soleil matin*/
 {
 	border-radius: 20px 0px 0px 20px;
 	object-fit: cover;
@@ -264,7 +290,7 @@ header
 
 .container_populaires h4
 {
-	width: 150px;
+	width: 160px; /*largeur du titre du conteneur h4 de Populaires*/
 }
 
 .container_populaires p
@@ -274,5 +300,5 @@ header
 
 .container_populaires i
 {
-	margin-top: 25px; /*par rapport au bloc précédent*/
+	margin-top: 25px; /*espacement par rapport au bloc précédent*/
 }
