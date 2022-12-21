@@ -58,7 +58,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 
 .filtres /*la partie recherche et tags avec l'info*/
 {
-	margin-bottom: 20px; 
+	margin-bottom: 25px; 
 }
 
 
@@ -68,6 +68,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	font-weight: bold; 
 	padding: 12px;
 	font-size: 1.1em;
+	margin-top: 10px; /*marge entre le haut du form et bas du p précédent*/
 }
 
 #localisation /*bordure logo ping*/
