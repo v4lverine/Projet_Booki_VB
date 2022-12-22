@@ -39,6 +39,12 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	font-size: 1.3em;
 }
 
+footer /*dimension et orientation du footer*/
+{
+	display: flex;
+	background-color: #F2F2F2;
+}
+
 .liens /*liens de navigation du site*/
 {
 	margin-left: 70px; /*espace entre les onglets de navigation*/
@@ -61,7 +67,6 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 {
 	margin-bottom: 25px; 
 }
-
 
 .location /*class de l'intérieur du formulaire*/
 {
@@ -91,7 +96,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 #bouton, #loupe /*bouton rechercher et bouton loupe*/
 {
 	color:white;
-	background: #0065FC;
+	background-color: #0065FC;
 	border-radius: 0px 15px 15px 0px;
 	border: 1px solid #0065FC;
 }
@@ -193,7 +198,7 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	padding-bottom: 10px; /*espacement intérieur du bloc*/
 }
 
-.cards_hebergements:hover 
+.cards_hebergements:hover, .cards_populaires:hover, .cards_activites:hover  
 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -269,11 +274,6 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	justify-content: space-between; /*espace entre images et conteneur texte*/
 }
 
-.cards_populaires:hover 
-{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .image_populaires /*image card populaires*/
 {
 	border-radius: 20px 0px 0px 20px;
@@ -324,11 +324,6 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	width: 22%; /*pour créer des écarts entre les cards et déterminer la largeur des cards par rapport aux marges de la page*/
 }
 
-.cards_activites:hover 
-{
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .images_activites /*bloc image d'activites*/
 {
 	border-radius: 20px 20px 0px 0px;
@@ -343,11 +338,6 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 	margin: 15px;
 }
 
-footer /*dimension et orientation du footer*/
-{
-	display: flex;
-	background-color: #F2F2F2;
-}
 
 .nav_footer /*dimension des blocs dans le footer*/
 {
