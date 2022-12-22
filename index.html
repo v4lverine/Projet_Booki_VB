@@ -21,7 +21,7 @@
 		<p class="endroit">En plein centre-ville ou en pleine nature</p>
 
 		<form method="post" action="traitement.php"> <!-- début du formulaire de recherche et php document fictif -->
-				<label class="location" for="lieu" id="localisation"> <!--à voir si je peux mettre autre chose que label-->
+				<label class="location" for="lieu" id="localisation"> <!--label pour le champ du formulaire-->
 					<i id="logo_ping" class="fa-solid fa-location-dot"></i>
 				</label>
 					<input class="location" type="search" name="lieu" id="vacances" placeholder="Marseille, France"/><input class="location" type="submit" value="Rechercher" id="bouton"/><!-- ne pas faire d'espace entre deux inputs liés --><button class="location" type="submit" id="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -43,7 +43,7 @@
 		</div>
 	</section>
 
-	<section id="article_aside"> <!--étape 6-->
+	<main id="article_aside"> <!--étape 6 et 8-->
 			<article class="all_cards_article">
 			<h1>Hébergements à Marseille</h1>
 				<a href="#" class="cards_hebergements">
@@ -99,7 +99,7 @@
 				</a>
 			</article>
 		
-			<aside class="all_cards_aside"> <!--étape 7-->
+			<aside class="all_cards_aside"> <!--étape 7 et 8-->
 				<div class="titre_populaires">
 					<h1>Les plus populaires</h1>
 					<i class="fa-solid fa-chart-line"></i>
@@ -107,9 +107,11 @@
 					<a href="#" class="cards_populaires">
 						<img class="image_populaires" src="assets/images_booki/hebergements/4_small/hotellesoleildumatin_small.jpg" title="Hôtel Le soleil du Matin" alt="Une photo d'une des chambres de l'hôtel Le soleil du Matin"/> 
 						<div class="container_populaires">
-							<h4>Hôtel Le soleil du Matin</h4>
-							<p>Nuit à partir de 128<b>€</b></p>
-							<div class="rows_stars">
+							<div>
+								<h4>Hôtel Le soleil du Matin</h4>
+								<p>Nuit à partir de 128<b>€</b></p>
+							</div>
+							<div>
 								<i id="elem1" class="fa-solid fa-star"></i><i id="elem2" class="fa-solid fa-star"></i><i id="elem3" class="fa-solid fa-star"></i><i id="elem4" class="fa-solid fa-star"></i><i id="elem5" class="fa-solid fa-star"></i>
 							</div>
 						</div>
@@ -117,9 +119,11 @@
 					<a href="#" class="cards_populaires">
 						<img class="image_populaires" src="assets/images_booki/hebergements/4_small/hotelcourseau_small.jpg" title="Chambre d'hôtes Au cœur de l'eau" alt="Une photo d'une des chambres de la chambre d'hôtes Au cœur de l'eau"/> 
 						<div class="container_populaires">
-							<h4>Chambre d'hôtes Au cœur de l'eau</h4>
-							<p>Nuit à partir de 71<b>€</b></p>
-							<div class="rows_stars">
+							<div>
+								<h4>Chambre d'hôtes Au cœur de l'eau</h4>
+								<p>Nuit à partir de 71<b>€</b></p>
+							</div>
+							<div>
 								<i id="elem1" class="fa-solid fa-star"></i><i id="elem2" class="fa-solid fa-star"></i><i id="elem3" class="fa-solid fa-star"></i><i id="elem4" class="fa-solid fa-star"></i><i id="elem5" class="fa-solid fa-star"></i>
 							</div>
 						</div>
@@ -127,14 +131,44 @@
 					<a href="#" class="cards_populaires">
 						<img class="image_populaires" src="assets/images_booki/hebergements/4_small/hotelbleuetblanc_small.jpg" title="Hôtel Bleu et Blanc" alt="Une photo d'une des chambres de l'hôtel Bleu et Blanc"/> 
 						<div class="container_populaires">
-							<h4>Hôtel Bleu et Blanc</h4>
-							<p>Nuit à partir de 68<b>€</b></p>
-							<div class="last_row_stars">
+							<div>
+								<h4>Hôtel Bleu et Blanc</h4>
+								<p>Nuit à partir de 68<b>€</b></p>
+							</div>
+							<div>
 								<i id="elem1" class="fa-solid fa-star"></i><i id="elem2" class="fa-solid fa-star"></i><i id="elem3" class="fa-solid fa-star"></i><i id="elem4" class="fa-solid fa-star"></i><i id="elem5" class="fa-solid fa-star"></i>
 							</div>
 						</div>
 					</a>
 			</aside>
+	</main>
+
+	<section id="activites"> <!--étape 9-->
+		<h1>Activités à Marseille</h1>
+		<a class="cards_activites" href="#">
+			<img class="images_activites" src="assets/images_booki/activites/3_medium/vieuxport.jpg" title="Le Vieux-Port" alt="Une photo du Vieux-Port de Marseille"/>
+			<div class="container_activites">
+				<p>Vieux-Port</p>
+			</div>
+		</a>
+		<a class="cards_activites" href="#">
+			<img class="images_activites" src="assets/images_booki/activites/3_medium/fort_pomegues.jpg" title="Le fort de Pomègues" alt="Une photo du fort de Pomègues"/>
+			<div class="container_activites">
+				<p>Fort de Pomègues</p>
+			</div>
+		</a>
+		<a class="cards_activites" href="#">
+			<img class="images_activites" src="assets/images_booki/activites/3_medium/calanques.jpg" title="Le parc national des Calanques" alt="Une photo du parc national des Calanques"/>
+			<div class="container_activites">
+				<p>Parc national des Calanques</p>
+			</div>
+		</a>
+		<a class="cards_activites" href="#">
+			<img class="images_activites" src="assets/images_booki/activites/3_medium/notre_dame_de_la_garde.jpg" title="Notre-Dame-de-la-Garde" alt="Une photo de la basilique Notre-Dame-de-la-Garde"/>
+			<div class="container_activites">
+				<p>Notre-Dame-de-la-Garde</p>
+			</div>
+		</a>
 	</section>
 
 </body>

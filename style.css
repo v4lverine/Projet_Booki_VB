@@ -103,9 +103,15 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 .tags /*l'ensemble de l'étape 5 avec filtres et tags*/
 {
 	display: flex;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	flex-flow: row wrap; /*wrap en prévision du responsive*/
+	align-items: center;
 	font-weight: bold;
+	margin-block: 20px; /*marges du bloc (top et bottom en l'occurence)*/
+}
+
+.tags ul
+{
+	padding-inline-start: 15px; /*pour enlever le padding start par défaut de 40px du ul*/
 }
 
 .choices
@@ -279,24 +285,57 @@ h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
 .container_populaires /*le bloc du texte de la card*/
 {
 	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-block: 12px; /*marges des contours du bloc de texte*/
+
 }
 
 .container_populaires h4
 {
 	width: 80%; /*largeur du titre du conteneur h4 de Populaires*/
+	margin-block: 0px; /*enlève les marges du bloc h4*/
 }
 
-.container_populaires p
+#activites /*tout le bloc activites*/
 {
-	margin-top: -15px;
+	margin-block: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 
-.rows_stars /*les deux prochaines propriétés sont à revoir, s'ils n'existent pas une alternative plus simple afin de coller le tout par rapport au bloc*/
+#activites h1
 {
-	padding-top: 15px; 
+	width: 100%;
 }
 
-.last_row_stars
+.cards_activites /*la dimension des cards d'activites*/
 {
-	padding-top: 35px;
+	text-decoration: none;
+	color: black;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 20px 20px 20px 20px;
+	width: 22%; /*pour créer des écarts entre les cards et déterminer la largeur des cards par rapport aux marges de la page*/
+}
+
+.cards_activites:hover 
+{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.images_activites /*bloc image d'activites*/
+{
+	border-radius: 20px 20px 0px 0px;
+	object-fit: cover;
+	width: 100%;
+	height: 440px;
+}
+
+.container_activites /*bloc texte d'activites*/
+{
+	font-weight: bold;
+	margin: 15px;
 }
