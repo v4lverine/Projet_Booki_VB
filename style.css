@@ -290,7 +290,7 @@ footer /*dimension et orientation du footer*/
 	margin-block: 0px; /*enlève les marges du bloc h4*/
 }
 
-.currency
+.currency /*la classe de l'euro dans les p des cards*/
 {
 	font-weight: bold;
 }
