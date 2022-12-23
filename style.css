@@ -177,7 +177,7 @@ footer /*dimension et orientation du footer*/
 	max-width: 60%; /*max-width du bloc entier*/
 }
 
-.all_cards_article h1, #activites h1 /* pour que le titre de l'article et de l'activité tienne sur une ligne, il prend tout la largeur du bloc*/
+.all_cards_article h1, #activites h1 /* pour que les titres de l'article et de l'activité tiennent sur une ligne, il prend tout la largeur du bloc*/
 {
 	width: 100%;
 }
@@ -323,7 +323,6 @@ footer /*dimension et orientation du footer*/
 {
 	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
-	width: 100%;
 	height: 440px;
 }
 
@@ -356,7 +355,7 @@ footer /*dimension et orientation du footer*/
 	margin-right: auto; /*marge qui fit pour la taille des liens*/
 }
 
-.nav_footer a:hover
+.nav_footer a:hover /*pas obligatoire, pour qu'on remarque que ce sont des liens cliquables*/
 {
 	border-bottom: black solid 1px;
 }
