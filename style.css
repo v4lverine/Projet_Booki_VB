@@ -14,11 +14,8 @@
 body 
 {
 	font-family: "Raleway", sans-serif;
-	margin-left: 40px; /*les margin de la page web entière*/
-	margin-top: 40px;
-	margin-right: 40px;
-	margin-bottom: 0px; /*pour que le footer touche le bas de la page*/
-	/*max-width: 1400px; la taille que devra avoir la page pour le responsive*/
+	margin : 40px 40px 0px 40px; /*ordre : top, right, bottom, left. les margin de la page web entière*/
+	max-width: 1400px; /*pour le responsive*/
 }
 
 header
