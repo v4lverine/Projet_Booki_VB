@@ -4,13 +4,6 @@
 	src: url(police/Raleway-VariableFont_wght.ttf);
 }
 
-@font-face
-{
-	font-family: "Raleway";
-	src: url(police/Raleway-VariableFont_wght.ttf);
-	font-weight: bold;
-}
-
 body 
 {
 	font-family: "Raleway", sans-serif;
@@ -31,7 +24,7 @@ i /*met tous les icons de la page en bleu*/
 	color: #0065FC;
 }
 
-h1 /*taille de tous les h1 de la page web pour correspondre à la maquette*/
+h1 /*taille de tous les h1 de la page web pour correspondre à la maquette, changer disposition (h1,h2,h3...)*/
 {
 	font-size: 1.3em;
 }
@@ -69,7 +62,7 @@ footer /*dimension et orientation du footer*/
 .location /*class de l'intérieur du formulaire*/
 {
 	font-family: "Raleway";
-	font-weight: bold; 
+	font-weight: bold;
 	padding: 12px;
 	font-size: 1.1em;
 	margin-top: 10px; /*marge entre le haut du form et bas du p précédent*/
@@ -295,6 +288,11 @@ footer /*dimension et orientation du footer*/
 {
 	width: 80%; /*largeur du titre du conteneur h4 de Populaires*/
 	margin-block: 0px; /*enlève les marges du bloc h4*/
+}
+
+.currency
+{
+	font-weight: bold;
 }
 
 #activites /*tout le bloc activites*/
