@@ -47,6 +47,7 @@ footer /*dimension et orientation du footer*/
 	margin-left: 70px; /*espace entre les onglets de navigation*/
 	text-decoration: none;
 	color: black;
+	padding-top: 10px; /*pour créer un espace entre la bordure top qui apparaît dans hover et l'onglet*/
 }
 
 .liens:hover
