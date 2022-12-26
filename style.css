@@ -6,9 +6,10 @@
 
 body 
 {
-	font-family: "Raleway", sans-serif;
-	margin : 40px 40px 0px 40px; /*ordre : top, right, bottom, left. les margin de la page web entière*/
+	font-family: "Raleway", sans-serif; /*quand on fait des margin, ordre : top, right, bottom, left. les margin de la page web entière*/
 	max-width: 1400px; /*pour que la dimension de la page reste la même sur tous les formats d'écran*/
+	margin-inline: 5%; /*les marges des côtés*/
+	margin-block: 40px 0px; /*les marges des hauteurs*/
 }
 
 header
@@ -354,4 +355,18 @@ footer /*dimension et orientation du footer*/
 .nav_footer a:hover /*pas obligatoire, pour qu'on remarque que ce sont des liens cliquables*/
 {
 	border-bottom: black solid 1px;
+}
+
+@media screen and (min-width: 778px) and (max-width: 992px) /*pour les tablettes*/
+{
+	body
+	{
+		margin-inline: 5%;
+		margin-block: 40px 0px;
+	}
+}
+
+@media screen and (max-width: 778px) and (orientation: portrait)
+{
+
 }
