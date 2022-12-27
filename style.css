@@ -165,8 +165,8 @@ footer /*dimension et orientation du footer*/
 	align-content: flex-start; /*pour que les éléments de la page soient alignés au début du bloc et non sur toute la hauteur*/
 	background-color: rgba(210, 210, 210, 0.2);
 	border-radius: 20px;
-	padding-inline: 50px; /*margin entre le bloc entier et les blocs internes*/
-	max-width: 60%; /*max-width du bloc entier*/
+	padding-inline: 30px; /*margin entre le bloc entier et les blocs internes*/
+	max-width: 61%; /*max-width du bloc entier*/
 }
 
 .all_cards_article h1, .all_cards_aside h1, #activites h1 /* pour que les titres de l'article et de l'activité tiennent sur une ligne, il prend tout la largeur du bloc*/
@@ -193,6 +193,7 @@ footer /*dimension et orientation du footer*/
 .cards_hebergements:hover, .cards_populaires:hover, .cards_activites:hover  
 {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.1);
 }
 
 .image_hebergements /*image card Hébergements*/
@@ -240,7 +241,7 @@ footer /*dimension et orientation du footer*/
 	flex-direction: column;
 	background-color: rgba(210, 210, 210, 0.2);
 	border-radius: 20px;
-	width: 25%;
+	width: 26%;
 	padding-inline: 30px;
 }
 
@@ -382,8 +383,13 @@ footer /*dimension et orientation du footer*/
 
 	.cards_hebergements
 	{
-		width: 33%;
-		height: 170px;
+		width: 31%;
+		height: 165px;
+	}
+
+	.container_hébergements, .container_populaires /*change la taille des polices des blocs de textes des cards*/
+	{
+		font-size: 0.9em;
 	}
 
 	.image_hebergements
@@ -408,7 +414,18 @@ footer /*dimension et orientation du footer*/
 	.cards_populaires
 	{
 		width: 31%;
-		height: 144px;
+		height: 135px;
+	}
+
+	.image_populaires
+	{
+		height: 125px;
+		width: 40%;
+	}
+	
+	.container_populaires
+	{
+		margin-inline: auto;
 	}
 
 	.images_activites
@@ -423,11 +440,58 @@ footer /*dimension et orientation du footer*/
 
 	.nav_footer
 	{
-		margin: auto;
+		margin-inline: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav_footer ul
+	{
+		margin-top: 6%;	
+	}
+
+	.nav_footer a
+	{
+		margin-bottom: 10px;
 	}
 }
 
-@media screen and (max-width: 778px) and (orientation: portrait)
+@media screen and (max-width: 778px)
 {
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
 
+	.nav_header
+	{
+		display: flex;
+	}
+
+	.liens
+	{
+		display: flex;
+		justify-content: space-around;	
+		border-bottom: 3px solid #D9D9D9;
+		margin-left: 0px; /*enlève le margin mis dans la page dimension web*/
+		padding-bottom: 20px;
+		width: 50%;
+	}
+
+	.liens:hover
+	{
+		color: #0065FC;
+		border-top: none;
+		border-bottom: 3px solid #0065FC;
+	}
+
+	#logo
+	{
+		display: block; /*pour manier le logo plus facilement*/
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 40px;
+	}
 }
