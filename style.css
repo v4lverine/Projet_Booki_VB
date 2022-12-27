@@ -169,7 +169,7 @@ footer /*dimension et orientation du footer*/
 	max-width: 60%; /*max-width du bloc entier*/
 }
 
-.all_cards_article h1, #activites h1 /* pour que les titres de l'article et de l'activité tiennent sur une ligne, il prend tout la largeur du bloc*/
+.all_cards_article h1, .all_cards_aside h1, #activites h1 /* pour que les titres de l'article et de l'activité tiennent sur une ligne, il prend tout la largeur du bloc*/
 {
 	width: 100%;
 }
@@ -359,10 +359,71 @@ footer /*dimension et orientation du footer*/
 
 @media screen and (min-width: 778px) and (max-width: 992px) /*pour les tablettes*/
 {
-	body
+
+	.choices
 	{
-		margin-inline: 5%;
-		margin-block: 40px 0px;
+		margin-inline: 8px; /*espace entre les tags*/
+	}
+
+	#article_aside
+	{
+		display: flex;
+		flex-flow: row wrap; /*pour laisser en row mais que les blocs passent à la ligne*/
+	}
+
+	.all_cards_article
+	{
+		max-width: 100%;
+		display: flex;
+		justify-content: space-between; /*voir pour régler le titre du bloc sans marge afin que les paddings soient équivalents*/
+		margin-bottom: 5%;
+		padding-bottom: 4%;
+	}
+
+	.cards_hebergements
+	{
+		width: 33%;
+		height: 170px;
+	}
+
+	.image_hebergements
+	{
+		height: 95px;
+	}
+
+	.all_cards_aside
+	{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		padding-block: 3%;
+	}
+
+	.titre_populaires
+	{
+		min-width: 100%; /*pour que le titre prenne toute la ligne*/
+	}
+
+	.cards_populaires
+	{
+		width: 31%;
+		height: 144px;
+	}
+
+	.images_activites
+	{
+		height: 180px ;
+	}
+
+	.container_activites
+	{
+		margin-block: auto; /*voir si je peux régler ça autrement car le padding bottom manque d'espacement*/
+	}
+
+	.nav_footer
+	{
+		margin: auto;
 	}
 }
 
