@@ -95,7 +95,7 @@ footer /*dimension et orientation du footer*/
 
 #loupe /*qui apparaîtra avec du responsive à la place du Rechercher*/
 {
-	display: none;	
+	display: none;
 }
 
 .tags /*l'ensemble de l'étape 5 avec filtres et tags*/
@@ -493,5 +493,22 @@ footer /*dimension et orientation du footer*/
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 40px;
+	}
+
+	#bouton
+	{
+		display: none;
+	}
+
+	#loupe
+	{
+		display: inline; /*est-ce la bonne terminaison à mettre ?*/
+		margin-left: 0px;
+	}
+
+	#loupe i
+	{
+		margin-left: 0px;
+		color: white;
 	}
 }
