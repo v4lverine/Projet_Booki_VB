@@ -430,7 +430,7 @@ footer /*dimension et orientation du footer*/
 
 	.images_activites
 	{
-		height: 180px ;
+		height: 180px;
 	}
 
 	.container_activites
@@ -462,7 +462,7 @@ footer /*dimension et orientation du footer*/
 	{
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 40px;
+		margin-bottom: 40px;/*margin for the whole block*/
 	}
 
 	.nav_header
@@ -475,7 +475,7 @@ footer /*dimension et orientation du footer*/
 		display: flex;
 		justify-content: space-around;	
 		border-bottom: 3px solid #D9D9D9;
-		margin-left: 0px; /*enlève le margin mis dans la page dimension web*/
+		margin-left: 0px; /*remove the previous margin for the web page dimension*/
 		padding-bottom: 20px;
 		width: 50%;
 	}
@@ -489,7 +489,7 @@ footer /*dimension et orientation du footer*/
 
 	#logo
 	{
-		display: block; /*pour manier le logo plus facilement*/
+		display: block; /*to handle the logo more easily */
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 40px;
@@ -503,12 +503,45 @@ footer /*dimension et orientation du footer*/
 	#loupe
 	{
 		display: inline; /*est-ce la bonne terminaison à mettre ?*/
-		margin-left: 0px;
 	}
 
 	#loupe i
 	{
-		margin-left: 0px;
 		color: white;
 	}
+
+	#vacances
+	{
+		max-width: 75%; /*revoir cette portion pour mieux gérer les proportions de la recherche*/
+		width: 100%;
+	}
+
+	.tags
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.tags ul
+	{
+		padding: 0;
+	}
+
+	.tags_list
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1em;
+	}
+
+	.choices
+	{
+		flex: auto;
+		width: 25%; /*ctrl /*/
+		font-size: 0.8em;
+		margin: 0;
+	}
+
 }
