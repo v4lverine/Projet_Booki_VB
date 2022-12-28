@@ -624,7 +624,7 @@ footer /*dimension et orientation du footer*/
 	{
 		display: flex;
 		flex-direction: column;
-		padding: 5% 0 25% 0; 
+		padding: 10% 0; 
 	}
 	
 	.nav_footer
