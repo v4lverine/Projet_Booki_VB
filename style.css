@@ -241,7 +241,7 @@ footer /*dimension et orientation du footer*/
 	flex-direction: column;
 	background-color: rgba(210, 210, 210, 0.2);
 	border-radius: 20px;
-	width: 26%;
+	width: 27%;
 	padding-inline: 30px;
 }
 
