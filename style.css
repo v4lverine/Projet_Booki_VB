@@ -329,14 +329,13 @@ footer /*dimension et orientation du footer*/
 	margin-block: 20px;
 }
 
-.nav_footer nav
+.options_footer
 {
-	padding-left: 0px;
 	display: flex;
 	flex-direction: column;
 }
 
-.nav_footer a /*écart entre les nav_links*/
+.options_footer a /*écart entre les nav_links*/
 {
 	margin-bottom: 15px; /*écart à la marge des nav_links et non padding*/
 	color: black;
@@ -436,12 +435,12 @@ footer /*dimension et orientation du footer*/
 		flex-direction: column;
 	}
 
-	.nav_footer ul
+	.options_footer
 	{
 		margin-top: 6%;	
 	}
 
-	.nav_footer a
+	.options_footer a
 	{
 		margin-bottom: 10px;
 	}
