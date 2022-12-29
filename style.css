@@ -25,9 +25,10 @@ i /*met tous les icons de la page en bleu*/
 	color: #0065FC;
 }
 
-h1 /*taille de tous les h1 de la page web pour correspondre à la maquette, changer disposition (h1,h2,h3...)*/
+.page_titles /*tous les titres hn principaux de la page*/
 {
 	font-size: 1.3em;
+	width: 100%;
 }
 
 footer /*dimension et orientation du footer*/
@@ -36,7 +37,12 @@ footer /*dimension et orientation du footer*/
 	background-color: #F2F2F2;
 }
 
-.nav_links /*nav_links de navigation du site*/
+.boldness
+{
+	font-weight: bold;
+}
+
+.nav_links /*liens de navigation dans le header*/
 {
 	margin-left: 70px; /*espace entre les onglets de navigation*/
 	text-decoration: none;
@@ -112,19 +118,19 @@ footer /*dimension et orientation du footer*/
 	padding-inline-start: 15px; /*pour enlever le padding start par défaut de 40px du ul*/
 }
 
-.tags_selection
+.tags_selection /*les onglets de tags*/
 {
 	border: #D9D9D9 solid 2px;
 	padding: 10px;
 	margin-inline: 15px;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 25px; /*s'applique sur tous les borders*/
 	color: black;
 	text-decoration: none;
 }
 
 .tags_selection i
 {
-	padding-right: 10px;
+	padding-inline: 8px;
 }
 
 
@@ -162,16 +168,10 @@ footer /*dimension et orientation du footer*/
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	align-content: flex-start; /*pour que les éléments de la page soient alignés au début du bloc et non sur toute la hauteur*/
 	background-color: rgba(210, 210, 210, 0.2);
 	border-radius: 20px;
-	padding-inline: 30px; /*margin entre le bloc entier et les blocs internes*/
+	padding: 2% 30px;
 	max-width: 61%; /*max-width du bloc entier*/
-}
-
-.all_cards_article h1, .all_cards_aside h1, #activities h1 /* pour que les titres de l'article et de l'activité tiennent sur une ligne, il prend tout la largeur du bloc*/
-{
-	width: 100%;
 }
 
 .cards_lodging  /*le bloc entier de la card*/ 
@@ -196,7 +196,7 @@ footer /*dimension et orientation du footer*/
 	transform: scale(1.1);
 }
 
-.image_lodging /*image card lodging*/
+.image_lodging /*image card hébergements*/
 {
 	border-radius: 20px 20px 0px 0px;
 	object-fit: cover;
@@ -208,13 +208,13 @@ footer /*dimension et orientation du footer*/
 
 .container_lodging /*texte entier sous l'image de la card*/
 {
-	margin-left: 20px; /*marge enter le texte et le bord du bloc*/
+	margin-left: 20px; /*marge entre le texte et le bord du bloc*/
 	margin-top: 5px;
 }
 
-.container_lodging h4, p
+.container_lodging p
 {
-	margin-block: 5px 5px;
+	margin-block: 5px;
 }
 
 .link_clickformore
@@ -242,7 +242,7 @@ footer /*dimension et orientation du footer*/
 	background-color: rgba(210, 210, 210, 0.2);
 	border-radius: 20px;
 	width: 27%;
-	padding-inline: 30px;
+	padding: 2% 30px; /*2% en top bot et 30px gauche droite*/
 }
 
 .titre_popular
@@ -260,11 +260,11 @@ footer /*dimension et orientation du footer*/
 	border-radius: 20px; /* 5px rounded corners */
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between; /*espace entre images et conteneur texte*/
 	background-color: white;
 	text-decoration: none;
 	color: black;
 	margin-bottom: 30px;
-	justify-content: space-between; /*espace entre images et conteneur texte*/
 }
 
 .image_popular /*image card popular*/
@@ -283,13 +283,13 @@ footer /*dimension et orientation du footer*/
 	flex-direction: column;
 	justify-content: space-between;
 	margin-block: 12px; /*marges des contours du bloc de texte*/
-
 }
 
-.container_popular h4
+.container_popular p
 {
-	width: 80%; /*largeur du titre du conteneur h4 de popular*/
-	margin-block: 0px; /*enlève les marges du bloc h4*/
+	width: 80%;
+	margin-block: 0px;
+	padding-bottom: 5px;
 }
 
 .currency /*la classe de l'euro dans les p des cards*/
@@ -313,21 +313,21 @@ footer /*dimension et orientation du footer*/
 	color: black;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
 	width: 22%; /*pour créer des écarts entre les cards et déterminer la largeur des cards par rapport aux marges de la page*/
 }
 
 .images_activities /*bloc image d'activities*/
 {
-	border-radius: 20px 20px 0px 0px;
+	border-radius: 20px  20px 0px 0px;
 	object-fit: cover;
-	height: 440px;
+	height: 400px;
 }
 
 .container_activities /*bloc texte d'activities*/
 {
 	font-weight: bold;
-	margin: 15px;
+	padding: 0 5%;
 }
 
 
@@ -435,7 +435,7 @@ footer /*dimension et orientation du footer*/
 
 	.container_activities
 	{
-		margin-block: auto; /*voir si je peux régler ça autrement car le padding bottom manque d'espacement*/
+		margin-block: auto;
 	}
 
 	.nav_footer
@@ -603,7 +603,7 @@ footer /*dimension et orientation du footer*/
 
 	#activities
 	{
-		margin-inline: 5%;
+		margin-inline: 5%; /*écart avec les marges de la page web*/
 		display: flex;
 		flex-direction: column;
 	}
