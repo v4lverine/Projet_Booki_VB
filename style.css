@@ -20,7 +20,7 @@ header
 	margin-bottom: 60px;
 }
 
-#icon_informations, .icon_blue /*met quasiment tous les icons de la page en bleu*/
+#icon_informations, .icon_blue, #logo_charts /*met quasiment tous les icons de la page en bleu*/
 {
 	color: #0065FC;
 }
@@ -335,15 +335,15 @@ footer /*dimension et orientation du footer*/
 	flex-direction: column;
 }
 
-.options_footer a /*écart entre les nav_links*/
+.options_footer a /*écart entre les liens du footer*/
 {
-	margin-bottom: 15px; /*écart à la marge des nav_links et non padding*/
+	margin-bottom: 15px; /*écart à la marge des liens et non padding*/
 	color: black;
 	text-decoration: none;
-	margin-right: auto; /*marge qui fit pour la taille des nav_links*/
+	margin-right: auto; /*marge qui fit pour la taille des liens*/
 }
 
-.nav_footer a:hover /*pas obligatoire, pour qu'on remarque que ce sont des nav_links cliquables*/
+.nav_footer a:hover /*pas obligatoire, pour qu'on remarque que ce sont des liens cliquables*/
 {
 	border-bottom: black solid 1px;
 }
@@ -365,8 +365,6 @@ footer /*dimension et orientation du footer*/
 	.all_cards_article
 	{
 		max-width: 100%;
-		display: flex;
-		justify-content: space-between; /*voir pour régler le titre du bloc sans marge afin que les paddings soient équivalents*/
 		margin-bottom: 5%;
 		padding-bottom: 4%;
 	}
