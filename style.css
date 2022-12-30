@@ -614,9 +614,4 @@ footer /*dimension et orientation du footer*/
 	{
 		margin: 0 5%; /*marge pour correspondre au body, quand on écrit comme ça, la première valeur correspond au top bot et l'autre au left-right*/
 	}
-
-	.nav_footer a
-	{
-		margin-bottom: 2%;
-	}
 }
