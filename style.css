@@ -278,7 +278,7 @@ footer /*dimension et orientation du footer*/
 
 .container_popular p
 {
-	width: 80%;
+	width: 90%;
 	margin-block: 0px;
 	padding-bottom: 5px;
 }
@@ -348,12 +348,12 @@ footer /*dimension et orientation du footer*/
 	border-bottom: black solid 1px;
 }
 
-@media screen and (min-width: 778px) and (max-width: 992px) /*pour les tablettes*/
+@media screen and (min-width: 767px) and (max-width: 992px) /*pour les tablettes*/
 {
-
 	.tags_selection
 	{
-		margin-inline: 8px; /*espace entre les tags*/
+		margin-inline: 9px; /*espace entre les tags*/
+		padding-left: 0px;
 	}
 
 	#article_aside
@@ -444,7 +444,7 @@ footer /*dimension et orientation du footer*/
 	}
 }
 
-@media screen and (max-width: 778px)
+@media screen and (max-width: 767px)
 {
 	body
 	{
