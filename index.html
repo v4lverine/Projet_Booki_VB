@@ -11,15 +11,15 @@
 
 	<body>
 		
-		<header> <!-- header avec le logo et les onglets de navigation / étape 3 -->
+		<header>
 			<img src="assets/images_booki/logo/Booki.png" id="logo" alt="Logo du site Booki">
 			<nav class="nav_header">
-				<a class="nav_links" href="#article_aside">Hébergements</a> <!-- faire une liste avec <ul> et <li> obligatoire ou pas ?-->
+				<a class="nav_links" href="#article_aside">Hébergements</a>
 				<a class="nav_links" href="#activities"> Activités</a>
 			</nav>
 		</header>
 
-		<section class="filters"> <!-- Début du menu recherche et filtres / étape 4 -->
+		<section class="filters">
 			<h1 class="page_titles">Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre-ville ou en pleine nature</p>
 
@@ -27,12 +27,12 @@
 					<label class="location" for="cities" id="localisation"> <!--label pour le champ du formulaire-->
 						<i id="logo_ping" class="fa-solid fa-location-dot"></i>
 					</label>
-						<input class="location" type="search" name="lieu" id="cities" placeholder="Marseille, France"><input class="location" type="submit" value="Rechercher" id="bouton"><!-- ne pas faire d'espace entre deux inputs liés --><button class="location" type="submit" id="loupe"><i class="fa-solid fa-magnifying-glass"></i></button>
-			</form> <!-- fin du formulaire -->
+						<input class="location" type="search" name="lieu" id="cities" placeholder="Marseille, France"><input class="location" type="submit" value="Rechercher" id="button"><!-- ne pas faire d'espace entre deux inputs liés --><button class="location" type="submit" id="magnifying_glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</form>
 
-			<nav class="tags"> <!-- étape 5 avec les tags et l'info, plutôt mettre un div ?-->
+			<nav class="tags">
 				<p>Filtres</p>
-				<div class="tags_list"> <!--div ou ul ici ?-->
+				<div class="tags_list">
 					<a class="tags_selection" href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
 					<a class="tags_selection" href="#"><i class="fa-solid fa-person"></i>Familial</a>
 					<a class="tags_selection" href="#"><i class="fa-solid fa-heart"></i>Romantique</a>
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 
-		<main id="article_aside"> <!--étape 6 et 8-->
+		<main id="article_aside">
 
 			<article class="all_cards_article">
 				<h2 class="page_titles">Hébergements à Marseille</h2>
@@ -109,7 +109,7 @@
 					</a>
 				</article>
 			
-				<aside class="all_cards_aside"> <!--étape 7 et 8-->
+				<aside class="all_cards_aside">
 					<div class="titre_popular">
 						<h2 class="page_titles">Les plus populaires</h2>
 						<i id="logo_charts" class="fa-solid fa-chart-line"></i>
@@ -157,7 +157,7 @@
 
 		</main>
 
-		<section id="activities"> <!--étape 9-->
+		<section id="activities">
 			<h3 class="page_titles">Activités à Marseille</h3>
 			<a class="cards_activities" href="#">
 				<img class="images_activities" src="assets/images_booki/activites/3_medium/vieuxport.jpg" title="Le Vieux-Port" alt="Une photo du Vieux-Port de Marseille">
@@ -188,7 +188,7 @@
 			</a>
 		</section>
 
-		<footer><!--étape 10-->
+		<footer>
 			<nav class="nav_footer">
 				<p><b class="boldness">À propos</b></p>
 				
