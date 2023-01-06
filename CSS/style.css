@@ -31,6 +31,11 @@ header
 	width: 100%;
 }
 
+.page_titles br
+{
+	display: none;
+}
+
 .boldness
 {
 	font-weight: bold;
@@ -41,7 +46,7 @@ header
 	margin-left: 70px; /*espace entre les onglets de navigation*/
 	text-decoration: none;
 	color: black;
-	padding-top: 10px; /*pour créer un espace entre la bordure top qui apparaît dans hover et l'onglet*/
+	padding-top: 30px; /*remonter la barre /pour créer un espace entre la bordure top qui apparaît dans hover et l'onglet*/
 }
 
 .nav_links:hover
@@ -193,7 +198,7 @@ header
 
 .container_lodging /*texte entier sous l'image de la card*/
 {
-	margin-left: 20px; /*marge entre le texte et le bord du bloc*/
+	margin-left: 20px; /*changer la width marge entre le texte et le bord du bloc*/
 	margin-top: 5px;
 }
 
@@ -272,9 +277,14 @@ header
 
 .container_popular p
 {
-	width: 90%;
+	width: 85%;
 	margin-block: 0px;
 	padding-bottom: 5px;
+}
+
+.container_popular .price_night
+{
+	width: 100%;
 }
 
 .currency /*la classe de l'euro dans les p des cards*/
@@ -374,7 +384,7 @@ footer /*dimension et orientation du footer*/
 		height: 165px;
 	}
 
-	.container_lodging, .container_popular /*change la taille des polices des blocs de textes des cards de la page*/
+	.container_lodging, .container_popular /*tous les prix sur la même ligne change la taille des polices des blocs de textes des cards de la page*/
 	{
 		font-size: 0.9em;
 	}
@@ -390,7 +400,7 @@ footer /*dimension et orientation du footer*/
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		padding-block: 3%;
+		/* padding-block: 2%; */
 	}
 
 	.titre_popular
@@ -400,7 +410,7 @@ footer /*dimension et orientation du footer*/
 
 	.cards_popular
 	{
-		width: 31%;
+		width: 32%;
 		height: 135px;
 	}
 
@@ -408,11 +418,22 @@ footer /*dimension et orientation du footer*/
 	{
 		height: 125px;
 		width: 40%;
+		padding-right: 10px;
 	}
 	
-	.container_popular
+	.boldness /*titres des cards de la page*/
 	{
-		margin-inline: auto;
+		font-size: 1em;
+	}
+
+	br
+	{
+		display: none;
+	}
+
+	.price_night
+	{
+		font-size: 0.8em;
 	}
 
 	.images_activities
@@ -487,6 +508,11 @@ footer /*dimension et orientation du footer*/
 		margin-bottom: 40px;
 	}
 
+	.page_titles br 
+	{
+		display: inline;
+	}
+
 	.filters
 	{
 		margin-inline: 5%;
@@ -532,7 +558,7 @@ footer /*dimension et orientation du footer*/
 	{
 		flex: auto;
 		width: 30%;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		margin: 0;
 	}
 
@@ -571,6 +597,11 @@ footer /*dimension et orientation du footer*/
 		display: flex;
 		flex-direction: column; /*car les cards étaient par défaut en row*/
 		width: auto;
+	}
+	
+	.all_cards_article .page_titles
+	{
+		width: 120%;
 	}
 
 	.cards_lodging
